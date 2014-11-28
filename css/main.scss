@@ -4,6 +4,7 @@ $sprite: "../img/sprite.png";
 $mediaMaxWidthStep1: 1300px;
 $mediaMaxWidthStep2: 960px;
 $mediaMaxWidthStep3: 640px;
+$mediaMaxWidthStep4: 440px;
 
 @mixin box-sizing ($type) {
   -webkit-box-sizing: $type;
@@ -160,7 +161,7 @@ body {
   .container {
     position: relative;
     max-width: 1260px;
-    min-width: 420px;
+    min-width: 300px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -356,7 +357,7 @@ header.wrapper {
 }
 @media only screen and (max-width: $mediaMaxWidthStep2){
   .mainSliderContainer.wrapper {
-    height: 360px;
+    height: 400px;
 
     &+.wrapper {
       text-align: center;
@@ -600,6 +601,14 @@ header.wrapper {
       max-width: 90%;
     }
   }
+  @media only screen and (max-width: $mediaMaxWidthStep4){
+    &>h1 {
+      font-size: 40px;
+    }
+    &>p {
+      font-size: 14px;
+    }
+  }
   @include noSelect;
 }
 @media only screen and (max-width: $mediaMaxWidthStep1){
@@ -609,7 +618,7 @@ header.wrapper {
 }
 @media only screen and (max-width: $mediaMaxWidthStep2){
   .mainSlider article {
-    height: 360px;
+    height: 400px;
   }
 }
 .mainSlider li.active {
@@ -697,6 +706,7 @@ header.wrapper {
 @media only screen and (max-width: $mediaMaxWidthStep2){
   #mainSliderThumbs>a {
     display: inline-block;
+    float: none;
     border: none;
     padding: 0 10px;
     min-width: 160px;
@@ -739,6 +749,13 @@ header.wrapper {
     }
   }
 }
+@media only screen and (max-width: $mediaMaxWidthStep4){
+  #mainSliderThumbs+a {
+    &>span {
+      font-size: 16px;
+    }
+  }
+}
 .starList {
   display: block;
   margin-top: 58px;
@@ -776,6 +793,16 @@ header.wrapper {
     &.sL-inrow+.sL-inrow {
       margin-left: 10%;
       width: 45%;
+    }
+  }
+  @media only screen and (max-width: $mediaMaxWidthStep4){
+    &.sL-inrow {
+      width: 100%;
+    }
+    &.sL-inrow+.sL-inrow {
+      margin-left: 0;
+      margin-top: 0;
+      width: 100%;
     }
   }
   &.sL-inrowBig {
@@ -900,6 +927,15 @@ header.wrapper {
     }
     &>h2 {
       padding-bottom: 52px;
+    }
+  }
+}
+@media only screen and (max-width: $mediaMaxWidthStep4) {
+  .aboutUs.container {
+    margin-top: 30px;
+
+    &>h1,h2 {
+      font-size: 20px;
     }
   }
 }
@@ -1092,6 +1128,17 @@ header.wrapper {
     margin-right: 10%;
   }
 }
+@media only screen and (max-width: $mediaMaxWidthStep4) {
+  .aboutUs_item_glance {
+    display: none;
+  }
+  .aboutUs_item.grid-common.grid_2 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .webAppDevFlow {
   padding-top: 10px;
 

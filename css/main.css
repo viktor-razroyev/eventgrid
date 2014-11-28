@@ -118,7 +118,7 @@ body {
   .wrapper .container {
     position: relative;
     max-width: 1260px;
-    min-width: 420px;
+    min-width: 300px;
     margin: 0 auto;
     overflow: hidden; }
   @media only screen and (max-width: 1300px) {
@@ -282,7 +282,7 @@ header.wrapper {
     height: 560px; } }
 @media only screen and (max-width: 960px) {
   .mainSliderContainer.wrapper {
-    height: 360px; }
+    height: 400px; }
     .mainSliderContainer.wrapper + .wrapper {
       text-align: center; } }
 .logo_header {
@@ -505,13 +505,18 @@ header.wrapper {
       position: absolute; }
     .mainSlider article > p {
       max-width: 90%; } }
+  @media only screen and (max-width: 440px) {
+    .mainSlider article > h1 {
+      font-size: 40px; }
+    .mainSlider article > p {
+      font-size: 14px; } }
 
 @media only screen and (max-width: 1300px) {
   .mainSlider article {
     height: 560px; } }
 @media only screen and (max-width: 960px) {
   .mainSlider article {
-    height: 360px; } }
+    height: 400px; } }
 .mainSlider li.active img {
   bottom: -40px;
   opacity: 1;
@@ -576,6 +581,7 @@ header.wrapper {
 @media only screen and (max-width: 960px) {
   #mainSliderThumbs > a {
     display: inline-block;
+    float: none;
     border: none;
     padding: 0 10px;
     min-width: 160px; }
@@ -608,6 +614,9 @@ header.wrapper {
     #mainSliderThumbs + a > span {
       display: inline-block;
       width: 180px; } }
+@media only screen and (max-width: 440px) {
+  #mainSliderThumbs + a > span {
+    font-size: 16px; } }
 .starList {
   display: block;
   margin-top: 58px; }
@@ -638,6 +647,13 @@ header.wrapper {
     .starList.sL-inrow + .sL-inrow {
       margin-left: 10%;
       width: 45%; } }
+  @media only screen and (max-width: 440px) {
+    .starList.sL-inrow {
+      width: 100%; }
+    .starList.sL-inrow + .sL-inrow {
+      margin-left: 0;
+      margin-top: 0;
+      width: 100%; } }
   .starList.sL-inrowBig {
     float: left;
     width: 45%;
@@ -729,6 +745,11 @@ header.wrapper {
       line-height: 35px; }
     .aboutUs.container > h2 {
       padding-bottom: 52px; } }
+@media only screen and (max-width: 440px) {
+  .aboutUs.container {
+    margin-top: 30px; }
+    .aboutUs.container > h1, .aboutUs.container h2 {
+      font-size: 20px; } }
 .aboutUs_item {
   position: relative;
   height: 440px;
@@ -915,6 +936,14 @@ header.wrapper {
     height: 440px;
     margin-left: 10%;
     margin-right: 10%; } }
+@media only screen and (max-width: 440px) {
+  .aboutUs_item_glance {
+    display: none; }
+
+  .aboutUs_item.grid-common.grid_2 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; } }
 .webAppDevFlow {
   padding-top: 10px; }
   .webAppDevFlow h4 {
