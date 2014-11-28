@@ -27,6 +27,11 @@
 body {
   font-family: GothamPro, "Times New Roman"; }
 
+.hideIt,
+.appearence_from_bottom,
+.aboutUs_item {
+  visibility: hidden; }
+
 .sectionDivider {
   height: 1px;
   border-bottom: 1px solid #95a5a6;
@@ -240,8 +245,13 @@ header.wrapper {
   background-color: #d44839; }
 
 .mainSliderContainer.wrapper {
-  background-color: #212121; }
+  background-color: #212121;
+  overflow: hidden;
+  height: 680px; }
 
+@media only screen and (max-width: 1300px) {
+  .mainSliderContainer.wrapper {
+    height: 560px; } }
 .logo_header {
   float: left;
   padding-top: 28px;
@@ -386,16 +396,16 @@ header.wrapper {
     width: 461px;
     opacity: 0;
     filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.1s ease-in;
-    -moz-transition: opacity 0.1s ease-in;
-    -ms-transition: opacity 0.1s ease-in;
-    -o-transition: opacity 0.1s ease-in;
-    transition: opacity 0.1s ease-in;
-    -webkit-transition: bottom 0.3s ease-in;
-    -moz-transition: bottom 0.3s ease-in;
-    -ms-transition: bottom 0.3s ease-in;
-    -o-transition: bottom 0.3s ease-in;
-    transition: bottom 0.3s ease-in; }
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in;
+    -webkit-transition: bottom 1.2s ease-in;
+    -moz-transition: bottom 1.2s ease-in;
+    -ms-transition: bottom 1.2s ease-in;
+    -o-transition: bottom 1.2s ease-in;
+    transition: bottom 1.2s ease-in; }
   @media only screen and (max-width: 1300px) {
     .mainSlider article > h1 {
       margin-top: 86px;

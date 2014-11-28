@@ -33,8 +33,13 @@
             }
             
             $.fn.smoove.items.push($item);
+
+            setInterval(function() {
+                $item.css({visibility: 'visible'});
+            }, 700);
         });
-        
+
+
         // function for adding vendor prefixes
         function crossBrowser(property, value, prefix) {
         
@@ -55,7 +60,7 @@
             
             return properties;
         }
-        
+
         // add event handlers
         if(!$.fn.smoove.loaded) {
             $.fn.smoove.loaded = true;

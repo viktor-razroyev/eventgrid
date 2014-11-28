@@ -114,6 +114,12 @@ body {
   font-family: GothamPro, "Times New Roman";
 }
 
+.hideIt,
+.appearence_from_bottom,
+.aboutUs_item{
+  visibility: hidden;
+}
+
 .sectionDivider {
   height: 1px;
   border-bottom: 1px solid #95a5a6;
@@ -292,8 +298,14 @@ header.wrapper {
 
 .mainSliderContainer.wrapper {
   background-color: #212121;
+  overflow: hidden;
+  height: 680px;
 }
-
+@media only screen and (max-width: $mediaMaxWidthStep1){
+  .mainSliderContainer.wrapper {
+    height: 560px;
+  }
+}
 
 .logo_header {
   float: left;
@@ -447,8 +459,8 @@ header.wrapper {
     width: 461px;
 
     @include opacity(0);
-    @include transition(opacity, 0.1s, ease-in);
-    @include transition(bottom, 0.3s, ease-in);
+    @include transition(opacity, 0.4s, ease-in);
+    @include transition(bottom, 1.2s, ease-in);
 
   }
 
@@ -484,7 +496,6 @@ header.wrapper {
     height: 560px;
   }
 }
-
 .mainSlider li.active {
   img {
     bottom: -40px;
