@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Главная</title>
+        <meta name="description" content="">
+        <meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;'>
+        <link rel="stylesheet" href="css/normalize.css?lastModified=170513">
+        <link rel="stylesheet" href="css/main.css?lastModified=170513">
+		<link rel="stylesheet" href="css/grid-system.css?lastModified=170513">
+		<link rel="stylesheet" href="css/responsiveness.css?lastModified=170513">
+		<script src="js/vendor/modernizr-2.6.2.min.js?lastModified=170513"></script>
+    </head>
+    <body>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js?lastModified=160513"><\/script>')</script>	
+		<script src="js/main.js?lastModified=170513"></script>  
+    </body>
+</html>
