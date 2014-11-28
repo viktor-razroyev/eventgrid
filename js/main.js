@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
         controls: false,
         mode: "fade",
         auto: true,
-        pause: 8000,
+        pause: 6000,
         autoHover: true,
         onSlideAfter: function($slideElement, oldIndex, newIndex){
             $slideElement.siblings('.active').removeClass('active');
@@ -38,9 +38,8 @@ jQuery(document).ready(function() {
                 offset: '15%',
                 opacity: 0,
                 perspective: 1000,
-                rotateX: "30deg",
-                moveY: "30px",
-                moveZ: "-50px",
+                rotateX: "25deg",
+                moveZ: "-100px",
                 speed: 0.4
             });
 
