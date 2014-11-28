@@ -1082,9 +1082,10 @@ header.wrapper {
 @media only screen and (max-width: $mediaMaxWidthStep2) {
   .aboutUs_item.grid-common.grid_2 {
     width: 60%;
-    height: 380px;
     margin-left: 20%;
     margin-right: 20%;
+    height: auto;
+    padding-bottom: 20px;
 
     &+.aboutUs_item.grid-common.grid_2 {
       margin-top: 40px;
@@ -1116,14 +1117,13 @@ header.wrapper {
       @include opacity(1);
     }
     .aboutUs_item_img {
-      margin-top: 20px;
+      margin-top: 30px;
     }
   }
 }
 @media only screen and (max-width: $mediaMaxWidthStep3) {
   .aboutUs_item.grid-common.grid_2 {
     width: 80%;
-    height: 440px;
     margin-left: 10%;
     margin-right: 10%;
   }
