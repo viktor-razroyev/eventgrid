@@ -81,6 +81,6 @@ jQuery(document).ready(function() {
                 }
             };
 
-        return ($ifMobileWidth === mobileUserAgent.any()) ? true : false;
+        return ($ifMobileWidth || mobileUserAgent.any());
     }
 });
