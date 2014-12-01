@@ -56,7 +56,15 @@ jQuery(document).ready(function() {
             });
         }
     }
-
+    var foo = function() {
+        var ctx = 0;
+        return function() {
+            console.log(ctx++);
+        };
+    }
+    var f = foo();
+    f();
+    f();
     function ifMobile () {
         var $media_for_js = jQuery(".media_for_js"),
             $ifMobileWidth = (parseInt($media_for_js.css("z-index")) > 960) ? false : true,

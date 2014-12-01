@@ -402,11 +402,6 @@ header.wrapper {
     letter-spacing: 0.01em;
     margin-bottom: 30px;
     text-transform: uppercase; }
-  @media only screen and (max-width: 1300px) {
-    .softwareDesign.container,
-    .webAppDev.container,
-    .marketingServices.container {
-      font-size: 34px; } }
   .softwareDesign.container h2, .softwareDesign.container h3,
   .webAppDev.container h2,
   .webAppDev.container h3,
@@ -417,6 +412,22 @@ header.wrapper {
     font-size: 24px;
     font-weight: 400;
     line-height: 30px; }
+  @media only screen and (max-width: 1300px) {
+    .softwareDesign.container h1,
+    .webAppDev.container h1,
+    .marketingServices.container h1 {
+      font-size: 34px; } }
+  @media only screen and (max-width: 640px) {
+    .softwareDesign.container h1,
+    .webAppDev.container h1,
+    .marketingServices.container h1 {
+      font-size: 28px; }
+    .softwareDesign.container h2, .softwareDesign.container h3,
+    .webAppDev.container h2,
+    .webAppDev.container h3,
+    .marketingServices.container h2,
+    .marketingServices.container h3 {
+      font-size: 20px; } }
 
 .softwareDesign.container {
   margin-top: 105px; }
