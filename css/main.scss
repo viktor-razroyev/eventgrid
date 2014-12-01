@@ -284,6 +284,21 @@ body {
 }
 /*----------------/GRID----------------*/
 
+/*----------------MEDIA_FOR_JS----------------*/
+.media_for_js {
+  position: fixed;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  z-index: 1900;
+}
+@media only screen and (max-width: $mediaMaxWidthStep2){
+  .media_for_js {
+    z-index: 960;
+  }
+}
+/*----------------/MEDIA_FOR_JS----------------*/
+
 /*----------------PUSH EFFECT----------------*/
 @-webkit-keyframes push {
   50% {
@@ -1088,7 +1103,7 @@ header.wrapper {
     padding-bottom: 20px;
 
     &+.aboutUs_item.grid-common.grid_2 {
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     h1 {

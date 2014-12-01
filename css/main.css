@@ -223,6 +223,18 @@ body {
   clear: both; }
 
 /*----------------/GRID----------------*/
+/*----------------MEDIA_FOR_JS----------------*/
+.media_for_js {
+  position: fixed;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  z-index: 1900; }
+
+@media only screen and (max-width: 960px) {
+  .media_for_js {
+    z-index: 960; } }
+/*----------------/MEDIA_FOR_JS----------------*/
 /*----------------PUSH EFFECT----------------*/
 @-webkit-keyframes push {
   50% {
@@ -915,7 +927,7 @@ header.wrapper {
     height: auto;
     padding-bottom: 20px; }
     .aboutUs_item.grid-common.grid_2 + .aboutUs_item.grid-common.grid_2 {
-      margin-top: 40px; }
+      margin-top: 20px; }
     .aboutUs_item.grid-common.grid_2 h1 {
       color: #fff; }
     .aboutUs_item.grid-common.grid_2 p {
